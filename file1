@@ -7,7 +7,7 @@ pipeline {
                 git 'https://github.com/Pritam-Khergade/student-ui.git'
             }
         }
-        stage('build stage') {
+        stage('build stage1') {
             steps {
                 sh 'apt install maven -y'
                 sh 'mvn clean install'
