@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build stage1') {
             steps {
-                sh 'apt-cache update -y'
+                sh 'apt-cache update '
                 sh 'apt-cache install maven -y'
                 sh 'mvn clean install'
             }
